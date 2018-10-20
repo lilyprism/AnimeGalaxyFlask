@@ -1,4 +1,6 @@
 # Statement for enabling the development environment
+import os
+
 DEBUG = True
 
 # Define the application directory
@@ -15,8 +17,7 @@ MINIFY_PAGE = True
 
 # Define the database - we are working with
 # SQLite for this example
-SQLALCHEMY_DATABASE_URI = 'postgres://uqmgfiflobiwcf:6dbf877b48810819ecabdea67cb7ba7ace818d31ccc7c01e317cf7cd548f95f8@ec2-23-21-147-71.compute-1.amazonaws.com:5432' \
-                          '/d5e7c2n50ucg1l'  # 'postgresql+psycopg2://postgres:admin@127.0.0.1:5432/AnimeGalaxy'
+SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'postgresql+psycopg2://postgres:admin@127.0.0.1:5432/AnimeGalaxy')
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 SQLALCHEMY_ECHO = False
 

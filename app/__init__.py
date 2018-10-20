@@ -6,36 +6,45 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_htmlmin import HTMLMIN
 
-app = Flask(__name__)
-app.config.from_object('config')
-login = LoginManager(app)
-csrf = CSRFProtect(app)
-db = SQLAlchemy(app)
-migrate = Migrate(app, db)
-HTMLMIN(app)
+login = LoginManager()
+csrf = CSRFProtect()
+db = SQLAlchemy()
+migrate = Migrate()
+admin = Admin()
 
 
-class MyAdminIndexView(AdminIndexView):
-	@expose('/')
-	def index(self):
-		if not current_user.is_authenticated:
-			return redirect(url_for('main.login'))
-		if current_user.is_admin:
-			return super(MyAdminIndexView, self).index()
-		else:
-			return redirect(url_for("main.home"))
+def create_app():
+	app = Flask(__name__)
+	app.config.from_object('config')
+	login.init_app(app)
+	csrf.init_app(app)
+	db.init_app(app)
+	migrate.init_app(app, db)
+	HTMLMIN(app)
 
+	class MyAdminIndexView(AdminIndexView):
+		@expose('/')
+		def index(self):
+			if not current_user.is_authenticated:
+				return redirect(url_for('main.login'))
+			if current_user.is_admin:
+				return super(MyAdminIndexView, self).index()
+			else:
+				return redirect(url_for("main.home"))
 
-admin = Admin(app, name='Anime Galaxy', template_mode='bootstrap3', index_view=MyAdminIndexView())
+	admin.init_app(app, index_view=MyAdminIndexView())
+	admin.name = 'Anime Galaxy'
+	admin.template_mode = 'bootstrap3'
 
-from app.admin_mod import views
-from app.main.controllers import main
-from app.anime_mod.controllers import anime_mod
+	from app.admin_mod import views
+	from app.main.controllers import main
+	from app.anime_mod.controllers import anime_mod
 
-app.register_blueprint(main)
-app.register_blueprint(anime_mod)
+	app.register_blueprint(main)
+	app.register_blueprint(anime_mod)
 
+	@app.errorhandler(404)
+	def page_not_found(e):
+		return render_template('404.html'), 404
 
-@app.errorhandler(404)
-def page_not_found(e):
-	return render_template('404.html'), 404
+	return app
