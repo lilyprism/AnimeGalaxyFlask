@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6a42f5a-5605-4a92-842d-e7d04596e4ad" name="Default Changelist" comment="" />
+    <list default="true" id="b6a42f5a-5605-4a92-842d-e7d04596e4ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +99,7 @@
           <entry key="JavaScript-modules-diagram/D:/PROGRAMMING/PyProjects/AnimeGalaxy" value="1" />
           <entry key="JavaScript-modules-diagram/D:/PROGRAMMING/PyProjects/AnimeGalaxy/app" value="1" />
           <entry key="Pipfile" value="7" />
+          <entry key="Procfile" value="1" />
           <entry key="Python/#D:/PROGRAMMING/PyProjects/AnimeGalaxy/app" value="2" />
           <entry key="README" value="1" />
           <entry key="anime" value="3" />
@@ -122,7 +125,7 @@
           <entry key="Database Element" value="29" />
           <entry key="HTML" value="50" />
           <entry key="Ini" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="Python" value="80" />
           <entry key="Scratch" value="1" />
           <entry key="TOML file" value="7" />
@@ -132,6 +135,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Pipfile" value="12" />
+          <entry key="Procfile" value="61" />
           <entry key="cell" value="4" />
           <entry key="css" value="343" />
           <entry key="html" value="5568" />
@@ -143,7 +147,7 @@
         <counts>
           <entry key="CSS" value="343" />
           <entry key="HTML" value="5568" />
-          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="PLAIN_TEXT" value="76" />
           <entry key="Python" value="9621" />
           <entry key="Scratch" value="4" />
           <entry key="TOML file" value="12" />
@@ -153,7 +157,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/anime_mod/controllers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="215">
@@ -163,6 +167,15 @@
                 <marker date="1540058200457" expanded="true" signature="359:494" ph="..." />
                 <marker date="1540058200457" expanded="true" signature="806:808" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -248,6 +261,7 @@
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/app/anime_mod/controllers.py" />
         <option value="$PROJECT_DIR$/app/models.py" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -263,7 +277,9 @@
     <option name="width" value="861" />
     <option name="height" value="973" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -281,30 +297,6 @@
               <item name="AnimeGalaxy" type="b2602c69:ProjectViewProjectNode" />
               <item name="AnimeGalaxy" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnimeGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnimeGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_mod" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnimeGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnimeGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="anime_mod" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnimeGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnimeGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnimeGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnimeGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -424,6 +416,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12526652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -457,11 +450,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/migrations/env.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-483" />
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b370bc24-c110-4ea5-8023-46f9b38b5cde/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -875,6 +863,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
