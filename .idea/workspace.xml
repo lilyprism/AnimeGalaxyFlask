@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6a42f5a-5605-4a92-842d-e7d04596e4ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +110,7 @@
           <entry key="ini" value="1" />
           <entry key="lock" value="1" />
           <entry key="public" value="1" />
-          <entry key="py" value="80" />
+          <entry key="py" value="81" />
           <entry key="quality" value="1" />
           <entry key="sql" value="1" />
           <entry key="user" value="10" />
@@ -126,7 +126,7 @@
           <entry key="HTML" value="50" />
           <entry key="Ini" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="80" />
+          <entry key="Python" value="81" />
           <entry key="Scratch" value="1" />
           <entry key="TOML file" value="7" />
           <entry key="UML" value="6" />
@@ -139,7 +139,7 @@
           <entry key="cell" value="4" />
           <entry key="css" value="343" />
           <entry key="html" value="5568" />
-          <entry key="py" value="9621" />
+          <entry key="py" value="9630" />
           <entry key="txt" value="15" />
         </counts>
       </usages-collector>
@@ -148,7 +148,7 @@
           <entry key="CSS" value="343" />
           <entry key="HTML" value="5568" />
           <entry key="PLAIN_TEXT" value="76" />
-          <entry key="Python" value="9621" />
+          <entry key="Python" value="9630" />
           <entry key="Scratch" value="4" />
           <entry key="TOML file" value="12" />
         </counts>
@@ -171,11 +171,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
               <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -258,10 +267,10 @@
         <option value="$PROJECT_DIR$/app/templates/anime/anime_detail.html" />
         <option value="$PROJECT_DIR$/app/templates/_layout.html" />
         <option value="$PROJECT_DIR$/app/templates/anime/episode_detail.html" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/app/anime_mod/controllers.py" />
         <option value="$PROJECT_DIR$/app/models.py" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/config.py" />
       </list>
     </option>
   </component>
@@ -418,7 +427,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12526652" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12526652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -433,7 +442,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Mypy" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.329718" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.329718" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -819,13 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/anime_mod/controllers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -870,6 +872,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
         </state>
       </provider>
     </entry>
