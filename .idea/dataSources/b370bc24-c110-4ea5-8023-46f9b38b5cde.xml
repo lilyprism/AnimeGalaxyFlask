@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="AnimeGalaxy DB">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.11">
+    <root id="1">
+      <ServerVersion>10.4</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="AnimeGalaxy">
+      <ObjectId>49152</ObjectId>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>116</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="POS">
+      <ObjectId>32768</ObjectId>
+      <Comment>POS System Testing Database</Comment>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="4" parent="1" name="postgres">
+      <ObjectId>12938</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="5" parent="1" name="saleor">
+      <ObjectId>24576</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <role id="6" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="7" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="8" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="9" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="10" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="11" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <role id="12" parent="1" name="saleor">
+      <ObjectId>16393</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <schema id="13" parent="2" name="information_schema">
+      <ObjectId>12648</ObjectId>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="14" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="15" parent="2" name="pg_temp_1">
+      <ObjectId>11736</ObjectId>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="16" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="17" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11737</ObjectId>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="18" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <Owner>postgres</Owner>
+      <IntrospectionTimestamp>2018-10-20.18:43:03.079</IntrospectionTimestamp>
+      <IntrospectionStateNumber>2984</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="19" parent="2" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="20" parent="2" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="21" parent="2" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="22" parent="2" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="23" parent="2" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="24" parent="2" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <sequence id="25" parent="18" name="video_id_seq">
+      <ObjectId>57390</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2787</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="26" parent="18" name="anime_id_seq">
+      <ObjectId>49173</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2676</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="27" parent="18" name="episode_id_seq">
+      <ObjectId>57368</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2740</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="28" parent="18" name="genre_id_seq">
+      <ObjectId>57344</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2725</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="29" parent="18" name="quality_id_seq">
+      <ObjectId>57381</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2782</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="30" parent="18" name="user_id_seq">
+      <ObjectId>49182</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2676</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <table id="31" parent="18" name="alembic_version">
+      <ObjectId>49168</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2675</StateNumber>
+    </table>
+    <table id="32" parent="18" name="anime">
+      <ObjectId>49175</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2740</StateNumber>
+    </table>
+    <table id="33" parent="18" name="anime_genres">
+      <ObjectId>57352</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2725</StateNumber>
+    </table>
+    <table id="34" parent="18" name="episode">
+      <ObjectId>57370</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2984</StateNumber>
+    </table>
+    <table id="35" parent="18" name="genre">
+      <ObjectId>57346</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2725</StateNumber>
+    </table>
+    <table id="36" parent="18" name="quality">
+      <ObjectId>57383</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2787</StateNumber>
+    </table>
+    <table id="37" parent="18" name="user">
+      <ObjectId>49184</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2984</StateNumber>
+    </table>
+    <table id="38" parent="18" name="user_rated_episodes">
+      <ObjectId>65604</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2984</StateNumber>
+    </table>
+    <table id="39" parent="18" name="video">
+      <ObjectId>57392</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2790</StateNumber>
+    </table>
+    <column id="40" parent="31" name="version_num">
+      <Position>1</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2675</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="41" parent="31" name="alembic_version_pkc">
+      <ObjectId>49171</ObjectId>
+      <ColNames>version_num</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="42" parent="31" name="alembic_version_pkc">
+      <ObjectId>49172</ObjectId>
+      <ColNames>version_num</ColNames>
+      <UnderlyingIndexName>alembic_version_pkc</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="43" parent="32" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2676</StateNumber>
+      <DefaultExpression>nextval(&apos;anime_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>anime_id_seq</SequenceName>
+    </column>
+    <column id="44" parent="32" name="name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2692</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="45" parent="32" name="image">
+      <Position>3</Position>
+      <DataType>varchar(250)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2723</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="46" parent="32" name="description">
+      <Position>4</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>2733</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="47" parent="32" name="anime_pkey">
+      <ObjectId>49179</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="48" parent="32" name="ix_anime_name">
+      <ObjectId>49181</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="49" parent="32" name="anime_pkey">
+      <ObjectId>49180</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>anime_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="50" parent="33" name="anime_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>2725</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="51" parent="33" name="genre_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>2725</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="52" parent="33" name="anime_genres_anime_id_fkey">
+      <ObjectId>57355</ObjectId>
+      <ColNames>anime_id</ColNames>
+      <RefTableId>49175</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>anime</RefTableName>
+      <RefKeyName>anime_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="53" parent="33" name="anime_genres_genre_id_fkey">
+      <ObjectId>57360</ObjectId>
+      <ColNames>genre_id</ColNames>
+      <RefTableId>57346</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>genre</RefTableName>
+      <RefKeyName>genre_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="54" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2740</StateNumber>
+      <DefaultExpression>nextval(&apos;episode_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>episode_id_seq</SequenceName>
+    </column>
+    <column id="55" parent="34" name="image">
+      <Position>2</Position>
+      <DataType>varchar(128)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2740</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="56" parent="34" name="number">
+      <Position>3</Position>
+      <DataType>double precision|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2740</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="57" parent="34" name="anime_id">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2787</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="58" parent="34" name="episode_pkey">
+      <ObjectId>57374</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="59" parent="34" name="ix_episode_id">
+      <ObjectId>57408</ObjectId>
+      <ColNames>id</ColNames>
+    </index>
+    <key id="60" parent="34" name="episode_pkey">
+      <ObjectId>57375</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>episode_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="61" parent="34" name="episode_anime_id_fkey">
+      <ObjectId>57376</ObjectId>
+      <ColNames>anime_id</ColNames>
+      <RefTableId>49175</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>anime</RefTableName>
+      <RefKeyName>anime_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="62" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2725</StateNumber>
+      <DefaultExpression>nextval(&apos;genre_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>genre_id_seq</SequenceName>
+    </column>
+    <column id="63" parent="35" name="name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <StateNumber>2725</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="64" parent="35" name="genre_pkey">
+      <ObjectId>57350</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="65" parent="35" name="genre_pkey">
+      <ObjectId>57351</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>genre_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="66" parent="36" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2782</StateNumber>
+      <DefaultExpression>nextval(&apos;quality_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>quality_id_seq</SequenceName>
+    </column>
+    <column id="67" parent="36" name="name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2782</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="68" parent="36" name="quality_pkey">
+      <ObjectId>57387</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="69" parent="36" name="ix_quality_name">
+      <ObjectId>57389</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="70" parent="36" name="quality_pkey">
+      <ObjectId>57388</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>quality_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="71" parent="37" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2676</StateNumber>
+      <DefaultExpression>nextval(&apos;user_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>user_id_seq</SequenceName>
+    </column>
+    <column id="72" parent="37" name="username">
+      <Position>2</Position>
+      <DataType>varchar(64)|0s</DataType>
+      <StateNumber>2676</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="73" parent="37" name="email">
+      <Position>3</Position>
+      <DataType>varchar(120)|0s</DataType>
+      <StateNumber>2676</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="74" parent="37" name="password_hash">
+      <Position>4</Position>
+      <DataType>varchar(128)|0s</DataType>
+      <StateNumber>2676</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="75" parent="37" name="is_admin">
+      <Position>5</Position>
+      <DataType>boolean|0s</DataType>
+      <StateNumber>2736</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="76" parent="37" name="avatar">
+      <Position>6</Position>
+      <DataType>varchar(128)|0s</DataType>
+      <StateNumber>2839</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="77" parent="37" name="banner">
+      <Position>7</Position>
+      <DataType>varchar(128)|0s</DataType>
+      <StateNumber>2860</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="78" parent="37" name="user_pkey">
+      <ObjectId>49188</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="79" parent="37" name="ix_user_username">
+      <ObjectId>49191</ObjectId>
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="80" parent="37" name="ix_user_email">
+      <ObjectId>49190</ObjectId>
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="81" parent="37" name="user_pkey">
+      <ObjectId>49189</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>user_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="82" parent="38" name="user_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2984</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="83" parent="38" name="episode_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2984</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="84" parent="38" name="liked">
+      <Position>3</Position>
+      <DataType>boolean|0s</DataType>
+      <StateNumber>2984</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="85" parent="38" name="disliked">
+      <Position>4</Position>
+      <DataType>boolean|0s</DataType>
+      <StateNumber>2984</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <index id="86" parent="38" name="user_rated_episodes_pkey">
+      <ObjectId>65607</ObjectId>
+      <ColNames>user_id
+episode_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="87" parent="38" name="user_rated_episodes_pkey">
+      <ObjectId>65608</ObjectId>
+      <ColNames>user_id
+episode_id</ColNames>
+      <UnderlyingIndexName>user_rated_episodes_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="88" parent="38" name="user_rated_episodes_user_id_fkey">
+      <ObjectId>65614</ObjectId>
+      <ColNames>user_id</ColNames>
+      <RefTableId>49184</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>user</RefTableName>
+      <RefKeyName>user_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="89" parent="38" name="user_rated_episodes_episode_id_fkey">
+      <ObjectId>65609</ObjectId>
+      <ColNames>episode_id</ColNames>
+      <RefTableId>57370</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>episode</RefTableName>
+      <RefKeyName>episode_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="90" parent="39" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2787</StateNumber>
+      <DefaultExpression>nextval(&apos;video_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>video_id_seq</SequenceName>
+    </column>
+    <column id="91" parent="39" name="video">
+      <Position>2</Position>
+      <DataType>varchar(180)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2787</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="92" parent="39" name="quality_id">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2787</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="93" parent="39" name="episode_id">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2790</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="94" parent="39" name="video_pkey">
+      <ObjectId>57396</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="95" parent="39" name="video_pkey">
+      <ObjectId>57397</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>video_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="96" parent="39" name="video_quality_id_fkey">
+      <ObjectId>57398</ObjectId>
+      <ColNames>quality_id</ColNames>
+      <RefTableId>57383</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>quality</RefTableName>
+      <RefKeyName>quality_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="97" parent="39" name="video_episode_id_fkey">
+      <ObjectId>57403</ObjectId>
+      <ColNames>episode_id</ColNames>
+      <RefTableId>57370</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>episode</RefTableName>
+      <RefKeyName>episode_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>

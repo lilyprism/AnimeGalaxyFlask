@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+"jinja2" = "*"
+pipenv = "*"
+mypy = "*"
+flask-login = "*"
+flask-sqlalchemy = "*"
+flask-wtf = "*"
+flask-migrate = "*"
+"psycopg2" = "*"
+flask-admin = "*"
+pillow = "*"
+flask-htmlmin = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"

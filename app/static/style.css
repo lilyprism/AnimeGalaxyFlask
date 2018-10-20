@@ -1,0 +1,129 @@
+.bg-0f0f0f {background: #0F0F0F;}
+.bg-dark-gray {background: #2A2E32;}
+.bg-invisible {background: transparent none;}
+.bg-dark-20 {background: rgba(0, 0, 0, 0.4)}
+.bg-red { background: #FF313A;}
+.container{min-width: 75% }
+.hover-grey {
+	transition: 0.2s;
+	padding:    0;
+}
+.hv100 {min-height: 100vh}
+.hover-grey:hover {
+	background-color: rgba(27, 27, 27, 0.85);
+}
+html{max-height: 100vh}
+/*html, body {min-height: 100%;}*/
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track {}
+::-webkit-scrollbar-thumb {
+	background:    #FF313A;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover { background: #C33035;}
+.text-red {color: #FF313A;}
+.red-underline { border-bottom: 3px solid #FF313A;}
+.fw-medium {font-weight: 500;}
+.fs-32 {font-size: 32px;}
+.fs-24 {font-size: 24px;}
+.fs-16 {font-size: 16px;}
+.fs-12 {font-size: 12px;}
+.hover-no-underline:hover {text-decoration: none !important;}
+.size-40px {height: 40px; width: 40px}
+.submit-btn {
+	width: 150px;
+	background: #FF313A;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	color: white;
+	transition: 0.2s;
+}
+.submit-btn:hover {
+	background: #AA272C;
+	border:     2px solid transparent;
+}
+.submit-btn:focus {
+	outline: none;
+}
+.input-hover{
+	border-radius: 6px;
+}
+.input-hover:focus{
+	outline: none;
+	box-shadow: 0 0 0 2px #FF313A;
+}
+.red-hover{}
+.red-hover:hover{color: #FF313A!important}
+.bg-dark-gradient{
+background: rgba(39,40,41,1);
+background: -moz-linear-gradient(top, rgba(39,40,41,1) 0%, rgba(18,20,23,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(39,40,41,1)), color-stop(100%, rgba(18,20,23,1)));
+background: -webkit-linear-gradient(top, rgba(39,40,41,1) 0%, rgba(18,20,23,1) 100%);
+background: -o-linear-gradient(top, rgba(39,40,41,1) 0%, rgba(18,20,23,1) 100%);
+background: -ms-linear-gradient(top, rgba(39,40,41,1) 0%, rgba(18,20,23,1) 100%);
+background: linear-gradient(to bottom, rgba(39,40,41,1) 0%, rgba(18,20,23,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272829', endColorstr='#121417', GradientType=0 );
+}
+/* CHECKBOX CUSTOM CSS */
+.toggle {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+.toggle:before {
+  content: "";
+  position: relative;
+  top: 3px;
+  left: 3px;
+  width: 34px;
+  height: 14px;
+  display: block;
+  background: #AAA;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+.toggle span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(255, 49, 58, 0.5);
+  transition: all 0.2s ease;
+}
+.toggle span:before {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: -18px;
+  width: 56px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 1;
+  pointer-events: none;
+}
+#cbx:checked + .toggle:before {
+  background: #FF313A;
+}
+#cbx:checked + .toggle span {
+  background: #FFF;
+  transform: translateX(20px);
+  transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
+  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.2);
+}
+#cbx:checked + .toggle span:before {
+  transform: scale(1);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+/* END OF CHECKBOX CUSTOM CSS */
+.z-above{z-index: 1050}

@@ -1,0 +1,37 @@
+{% extends "_layout.html" %}
+{% block body %}
+
+	<div class="">
+		<div class="">
+			<img src="{% if user.banner %}{{ url_for('static', filename=user.banner) }}{% else %}{{ url_for('static', filename='no_banner.png') }}{% endif %}" alt="" width="100%" height="auto" style="border-radius: 0 0 150px 150px">
+		</div>
+		<div class="position-relative mx-5 px-5" style="top:-95px">
+			<div class="row no-gutters mx-5">
+				<img src="{% if user.avatar %}{{ url_for('static', filename=user.avatar) }}{% else %}{{ url_for('static', filename='no_avatar.png') }}{% endif %}" alt="" height="190px" width="190px"
+				     class="rounded-circle d-none d-lg-block z-above">
+				<div class="col d-flex align-items-center">
+					<div class="d-none d-lg-block">
+						<div class="bg-white position-relative" style="left:-95px;padding:10px 25px 10px 95px;border-radius: 150px">
+							<h2 class="red-underline ml-2 text-dark" style="max-width: 320px;overflow: hidden">{{ user.username }}</h2>
+							{% if user.is_admin %}<h5 class="text-red ml-2">Admin</h5>{% else %}<h5 class="text-success ml-2">Membro</h5>{% endif %}
+						</div>
+					</div>
+					<div class="d-block d-lg-none pt-5 mt-4 mx-auto">
+						<div class="bg-white" style="padding:5px 25px 5px 25px;border-radius: 150px">
+							<h2 class="text-dark text-center fs-16"><span class="red-underline">{{ user.username }}</span></h2>
+							{% if user.is_admin %}<h5 class="text-center text-red fs-12 mb-0">Admin</h5>{% else %}<h5 class="text-success mb-0">Membro</h5>{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			{% if user.id == current_user.id %}
+				<a href="{{ url_for('main.edit_profile') }}" class="btn btn-success">Edit Profile</a>
+			{% endif %}
+
+			<h1 class="text-white">TESTE TESTE TESTE</h1>
+		</div>
+	</div>
+
+{% endblock %}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>{{ title }}</title>
+	<meta name="description" content="AnimeGalaxy, o seu melhor lugar para ver animes!">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" media="." onload="this.media='all'">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" media="." onload="this.media='all'">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" media="." onload="this.media='all'">
+	<link rel="shortcut icon" type="image/x-icon" href={{ url_for("static", filename="favicon.ico") }}>
+</head>
+
+<body class="bg-dark-gradient hv100" style="background: #0F0F0F; visibility: hidden" onload="ready()">
+{% block body_nnb %}
+
+	<img src="{{ url_for('static', filename='top_banner.png') }}" alt="" width="100%" height="auto">
+
+	<!-- NavBar -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-0f0f0f p-0 sticky-top">
+		<div class="container mt-0 px-0">
+			<!-- Logo -->
+			<a class="navbar-brand" href="{{ url_for('main.home') }}">
+				<img src="{{ url_for('static', filename='texto.png') }}" height="45" width="auto">
+			</a>
+			<!-- Toggler -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+					class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Item List -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link p-0 hover-grey" href="{{ url_for('anime_mod.animes') }}">
+							<img src="{{ url_for('static', filename='animes_button.png') }}" style="height: 65px" />
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link p-0 hover-grey" href="#">
+							<img src="{{ url_for('static', filename='team_button.png') }}" style="height: 65px" />
+						</a>
+					</li>
+				</ul>
+				<!-- Dropdown -->
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle d-flex align-items-center hover-grey" href="#" id="navbardrop" data-toggle="dropdown"
+						   style="height: 65px">
+							{% if current_user.is_authenticated %}
+								<img src="{% if current_user.avatar %}{{ url_for('static', filename=current_user.avatar) }}{% else %}{{ url_for('static', filename='no_avatar.png') }}{% endif %}" style="height: 45px; width:45px"
+								     class="rounded-circle mx-2" />
+								{{ current_user.username }}
+							{% else %}
+								<img src="{{ url_for('static', filename='no_avatar.png') }}" style="height: 45px" class="rounded-circle mx-2" />
+							{% endif %}
+						</a>
+						<div class="dropdown-menu">
+							{% if current_user.is_authenticated %}
+								{% if current_user.is_admin %}
+									<a class="dropdown-item" href="{{ url_for('admin.index') }}"> <i class="fa fa-columns fa-fw" aria-hidden="true"></i>&nbspAdmin Panel</a>
+								{% endif %}
+								<a class="dropdown-item" href="{{ url_for('main.profile', id=current_user.id) }}"> <i class="fa fa-cogs fa-fw" aria-hidden="true"></i>&nbspPerfil</a>
+								<a class="dropdown-item" href="{{ url_for('main.logout') }}"> <i class="fa fa-sign-out-alt fa-fw" aria-hidden="true"></i>&nbspSair</a>
+							{% else %}
+								<a class="dropdown-item" href="{{ url_for('main.register') }}"> <i class="fa fa-user-plus fa-fw" aria-hidden="true"></i>&nbspRegistrar</a>
+								<a class="dropdown-item" href="{{ url_for('main.login') }}"> <i class="fa fa-sign-in-alt fa-fw" aria-hidden="true"></i>&nbspEntrar</a>
+							{% endif %}
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Body -->
+	<div class="container mt-0 px-0">
+		{% block body %}{% endblock %}
+	</div>
+{% endblock %}
+	<!-- Scripts -->
+
+<script defer src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+<script defer>function ready() {
+    document.body.setAttribute("style", "visibility:visible");
+}</script>
+{% block scripts %}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% extends "_layout.html" %}
+{% block body %}
+
+	<div class="text-white">
+		<h1>Animes:</h1>
+		{% for anime in animes %}
+			<h4><a href="{{ url_for('anime_mod.anime_details', id=anime.id) }}">{{ anime.name }}</a></h4>
+		{% endfor %}
+	</div>
+
+{% endblock %}

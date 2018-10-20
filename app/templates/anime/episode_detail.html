@@ -1,0 +1,59 @@
+{% extends '_layout.html' %}
+
+{% block body %}
+	<div class="text-white">
+		<h1>{{ title }}</h1>
+		<h2>Videos: </h2>
+		{% for video in episode.videos %}
+			<p>{{ video.video }} - {{ video.quality.name }}</p>
+		{% endfor %}
+
+		{% if next %}
+			<h1>Próximos episodios:</h1>
+			{% for episode in next %}
+				<a href="{{ url_for('anime_mod.episode', id=episode.id) }}">Episodio: {{ episode.e_number }}</a><br>
+			{% endfor %}
+
+		{% endif %}
+
+		{% if before %}
+			<h1>Episódio Anterior:</h1>
+			<a href="{{ url_for('anime_mod.episode', id=before.id) }}">Episodio: {{ before.e_number }}</a><br>
+		{% endif %}
+
+
+		<button class="btn btn-primary" onclick="like_ep()" id="like">Like{% if liked %}d{% endif %}</button>
+	<button class="btn btn-primary" onclick="dislike_ep()" id="dislike">Dislike{% if disliked %}d{% endif %}</button>
+	</div>
+{% endblock %}
+
+{% block scripts %}
+	<script>
+        function like_ep() {
+            $.ajax({
+                type: "GET",
+                url: "{{ url_for('anime_mod.like_episode', id=episode.id) }}",
+                success: function (data) {
+	                liked = "Like" + ((data.liked) ? "d" : "");
+	                disliked = "Dislike" + ((data.disliked) ? "d" : "");
+	                $('#dislike').html(disliked);
+	                $('#like').html(liked);
+                },
+                dataType: 'json'
+            });
+        }
+        function dislike_ep() {
+            $.ajax({
+                type: "GET",
+                url: "{{ url_for('anime_mod.dislike_episode', id=episode.id) }}",
+                success: function (data) {
+	                disliked = "Dislike" + ((data.disliked) ? "d" : "");
+	                liked = "Like" + ((data.liked) ? "d" : "");
+	                $('#like').html(liked);
+	                $('#dislike').html(disliked)
+                },
+                dataType: 'json'
+            });
+        }
+	</script>
+{% endblock %}

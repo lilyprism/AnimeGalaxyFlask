@@ -1,0 +1,29 @@
+{% extends "_layout.html" %}
+{% block body_nnb %}
+	<div class="d-flex flex-column justify-content-center hv100">
+		<div class="m-auto p-3">
+			<a href="{{ url_for('main.home') }}"><img src="{{ url_for('static', filename='texto.png') }}" width="100%" style="padding:10px 0 50px 0;"></a>
+			<div class="bg-0f0f0f px-3 pt-3 pb-2 w-100">
+				<form enctype="multipart/form-data" method="post" class="d-flex justify-content-center flex-column text-white" novalidate>
+					{{ form.hidden_tag() }}
+					{{ form.non_field_errors }}
+
+					{{ form.username.label }}
+					{{ form.username(class="w-100 input-hover mb-2") }}
+					{{ form.email.label }}
+					{{ form.email(class="w-100 input-hover mb-2") }}
+					{{ form.password.label }}
+					{{ form.password(class="w-100 input-hover mb-2") }}
+					{{ form.password2.label }}
+					{{ form.password2(class="w-100 input-hover mb-2") }}
+
+					<div class="d-flex justify-content-center pt-4">{{ form.submit(class="submit-btn mx-auto") }}</div>
+					<p class="fs-12 mb-0">
+						<a href="{{ url_for('main.login') }}" class="text-white hover-no-underline red-hover">Já tens conta?</a>
+					</p>
+				</form>
+			</div>
+
+		</div>
+	</div>
+{% endblock %}

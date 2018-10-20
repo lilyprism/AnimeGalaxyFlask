@@ -1,0 +1,12 @@
+{% extends "_layout.html" %}
+{% block body %}
+
+	<div class="text-white">
+		<h1><b>Nome: </b>{{ anime.name }}</h1>
+		<h3 class="fs-16">Categorias: {{ categories }}</h3>
+		{% for episode in anime.episodes %}
+			<a href="{{ url_for('anime_mod.episode', id=episode.id) }}">Episodio: {{ episode.e_number }}</a><br>
+		{% endfor %}
+	</div>
+
+{% endblock %}
