@@ -16,6 +16,7 @@ flask-migrate = "*"
 flask-admin = "*"
 pillow = "*"
 flask-htmlmin = "*"
+gunicorn = "*"
 
 [dev-packages]
 
