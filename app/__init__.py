@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect, url_for
-from flask_login import LoginManager, current_user
+from flask_login import LoginManager, current_user, login_manager
 from flask_admin import Admin, AdminIndexView, expose
 from flask_s3 import FlaskS3
 from flask_wtf.csrf import CSRFProtect
@@ -19,7 +19,6 @@ s3 = FlaskS3()
 
 
 def create_app():
-
 	app = Flask(__name__)
 	app.config.from_object('config')
 	csrf.init_app(app)
@@ -29,7 +28,7 @@ def create_app():
 	db.init_app(app)
 	migrate.init_app(app, db)
 	HTMLMIN(app)
-	Talisman(app, content_security_policy=CSP, force_https=False)
+	Talisman(app, content_security_policy=CSP, force_https=False, session_cookie_http_only=False, session_cookie_secure=False)
 
 	class MyAdminIndexView(AdminIndexView):
 		@expose('/')
