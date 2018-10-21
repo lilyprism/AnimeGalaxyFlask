@@ -1,10 +1,7 @@
 # Statement for enabling the development environment
 import os
 
-DEBUG = True
-
-FLASK_PORT = 80
-FLASK_HOST = '0.0.0.0'
+DEBUG = False
 
 # BASE_DIR = abspath(dirname(__file__))
 
@@ -44,9 +41,36 @@ AWS_ACCESS_KEY_ID = 'AKIAJSZT2QEAJX4WX6UQ'
 AWS_SECRET_ACCESS_KEY = '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'
 FLASKS3_ACTIVE = True
 FLASKS3_DEBUG = DEBUG
+FLASKS3_GZIP = True
+FLASKS3_GZIP_ONLY_EXTS = ['.js', '.css']
 FLASKS3_FORCE_MIMETYPE = True
 FLASKS3_FILEPATH_HEADERS = {
-    r'.css$': {
-        'Content-Type': 'text/css',
-    }
+	r'.css$': {
+		'Content-Type': 'text/css',
+	}
 }
+
+CSP = {
+		'default-src': [
+			'\'self\'',
+			'anime-galaxy.s3.amazonaws.com'
+		],
+
+		'img-src'    : '*',
+		'style-src'  : [
+			'\'self\'',
+			'stackpath.bootstrapcdn.com',
+			'use.fontawesome.com',
+			'anime-galaxy.s3.amazonaws.com',
+			'\'unsafe-inline\''
+		],
+		'script-src': [
+			'\'self\'',
+			'code.jquery.com',
+			'stackpath.bootstrapcdn.com',
+			'use.fontawesome.com',
+			'anime-galaxy.s3.amazonaws.com',
+			'\'unsafe-inline\''
+		],
+		'font-src': '*'
+	}

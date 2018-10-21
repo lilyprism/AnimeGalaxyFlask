@@ -6,6 +6,9 @@ from flask_wtf.csrf import CSRFProtect
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_htmlmin import HTMLMIN
+from flask_talisman import Talisman
+
+from config import CSP
 
 login = LoginManager()
 csrf = CSRFProtect()
@@ -16,14 +19,17 @@ s3 = FlaskS3()
 
 
 def create_app():
+
 	app = Flask(__name__)
 	app.config.from_object('config')
+	csrf.init_app(app)
 	s3.init_app(app)
 	login.init_app(app)
-	csrf.init_app(app)
+
 	db.init_app(app)
 	migrate.init_app(app, db)
 	HTMLMIN(app)
+	Talisman(app, content_security_policy=CSP)
 
 	class MyAdminIndexView(AdminIndexView):
 		@expose('/')

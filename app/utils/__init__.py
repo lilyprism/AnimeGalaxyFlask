@@ -33,11 +33,8 @@ class S3FileUploadField(FileUploadField):
 	to Amazon S3 (as well as the default local storage).
 	"""
 
-	def __init__(self, label=None, validators=None, storage_type=None,
-	             bucket_name=None, access_key_id=None,
-	             access_key_secret=None, acl='public-read',
-	             storage_type_field=None, bucket_name_field=None,
-	             static_root_parent=None, **kwargs):
+	def __init__(self, label=None, validators=None, acl='public-read',
+	             storage_type_field=None, bucket_name_field=None, **kwargs):
 		super(S3FileUploadField, self).__init__(label, validators, **kwargs)
 
 		self.storage_type = 's3'
@@ -135,7 +132,6 @@ class S3FileUploadField(FileUploadField):
 		if not (self.storage_type and self.bucket_name):
 			return self._save_file_local(temp_file, filename)
 
-
 		conn = connect_to_region(config.FLASKS3_REGION, aws_access_key_id=config.AWS_ACCESS_KEY_ID, aws_secret_access_key=config.AWS_SECRET_ACCESS_KEY,
 		                         calling_format=OrdinaryCallingFormat(), is_secure=True)
 		bucket = conn.get_bucket(config.FLASKS3_BUCKET_NAME)
@@ -209,9 +205,7 @@ class S3ImageUploadField(S3FileUploadField):
 	def pre_validate(self, form):
 		super(S3ImageUploadField, self).pre_validate(form)
 
-		if (self.data and
-				isinstance(self.data, FileStorage) and
-				self.data.filename):
+		if self.data and isinstance(self.data, FileStorage) and self.data.filename:
 			try:
 				self.image = Image.open(self.data)
 			except Exception as e:

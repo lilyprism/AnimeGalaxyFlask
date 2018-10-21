@@ -20,6 +20,8 @@ gunicorn = "*"
 boto = "*"
 "flask-s3" = "*"
 "url-for-s3" = "*"
+flask-talisman = "*"
+flask-seasurf = "*"
 
 [dev-packages]
 
