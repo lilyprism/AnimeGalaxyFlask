@@ -29,7 +29,7 @@ def create_app():
 	db.init_app(app)
 	migrate.init_app(app, db)
 	HTMLMIN(app)
-	Talisman(app, content_security_policy=CSP)
+	Talisman(app, content_security_policy=CSP, force_https=False)
 
 	class MyAdminIndexView(AdminIndexView):
 		@expose('/')
