@@ -12,6 +12,7 @@ from wtforms.validators import DataRequired
 import config
 from app import admin, db
 from app.models import User, Anime, Genre, Episode, Quality, Video
+from app.utils import S3ImageUploadField
 
 from config import STATIC
 
@@ -82,8 +83,8 @@ class UserView(CModelView):
 	)
 
 	form_extra_fields = {
-		'avatar'  : form.ImageUploadField('Avatar', base_path=STATIC, namegen=media_prefix_uuid, max_size=(190, 190, True)),
-		'banner'  : form.ImageUploadField('Banner', base_path=STATIC, namegen=media_prefix_uuid, max_size=(1700, 300, True)),
+		'avatar'  : S3ImageUploadField('Avatar', base_path=STATIC, namegen=media_prefix_uuid, max_size=(190, 190, True)),
+		'banner'  : S3ImageUploadField('Banner', base_path=STATIC, namegen=media_prefix_uuid, max_size=(1700, 300, True)),
 		'password': PasswordField('Password')
 	}
 
@@ -101,7 +102,7 @@ class AnimeView(CModelView):
 	# Alternative way to contribute field is to override it completely.
 	# In this case, Flask-Admin won't attempt to merge various parameters for the field.
 	form_extra_fields = {
-		'image': form.ImageUploadField('Image', base_path=STATIC, namegen=media_prefix_uuid, validators=[DataRequired()])
+		'image': S3ImageUploadField('Image', base_path=STATIC, namegen=media_prefix_uuid, validators=[DataRequired()])
 	}
 
 
@@ -113,7 +114,7 @@ class EpisodeView(CModelView):
 	form_excluded_columns = ('episodes',)
 
 	form_extra_fields = {
-		'image': form.ImageUploadField('Image', base_path=STATIC, namegen=media_prefix_uuid, validators=[DataRequired()])
+		'image': S3ImageUploadField('Image', base_path=STATIC, namegen=media_prefix_uuid, validators=[DataRequired()])
 	}
 
 

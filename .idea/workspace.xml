@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6a42f5a-5605-4a92-842d-e7d04596e4ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin_mod/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin_mod/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/media/2878439b-2048-4b2a-a9d2-b0b3c25a895d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/media/57f58ebd-4212-4094-837d-4ac0b72e65b5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/media/7e23bd68-ae6c-4df9-a58a-a519d8397003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/media/82e4c0ef-4c8a-4197-8e1c-5dfe177db2a4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/media/84d1fd1f-b48f-4899-b360-87e5e5c0bac5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/media/b84367d6-969a-476f-b9b7-7cdc378bc0bc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/media/cd6cb361-8bda-472d-ae6b-6850fb36ab2e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/media/d62a1985-c6e6-438f-b089-330d4037196f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +23,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/AnimeGalaxy$AnimeServer.coverage" NAME="AnimeServer Coverage Results" MODIFIED="1540081662638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/AnimeGalaxy$run.coverage" NAME="run Coverage Results" MODIFIED="1540080425107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AnimeGalaxy$run.coverage" NAME="run Coverage Results" MODIFIED="1540084584201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -108,14 +117,14 @@
           <entry key="anime_genres" value="3" />
           <entry key="css" value="3" />
           <entry key="episode" value="3" />
-          <entry key="html" value="51" />
+          <entry key="html" value="52" />
           <entry key="ini" value="1" />
           <entry key="lock" value="1" />
           <entry key="public" value="1" />
-          <entry key="py" value="100" />
+          <entry key="py" value="109" />
           <entry key="quality" value="1" />
-          <entry key="sql" value="1" />
-          <entry key="user" value="12" />
+          <entry key="sql" value="2" />
+          <entry key="user" value="15" />
           <entry key="user_liked_episodes" value="1" />
           <entry key="user_rated_episodes" value="5" />
           <entry key="video" value="3" />
@@ -124,12 +133,12 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="Database Element" value="31" />
-          <entry key="HTML" value="51" />
+          <entry key="Database Element" value="34" />
+          <entry key="HTML" value="52" />
           <entry key="Ini" value="1" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="100" />
-          <entry key="Scratch" value="1" />
+          <entry key="Python" value="109" />
+          <entry key="Scratch" value="2" />
           <entry key="TOML file" value="8" />
           <entry key="UML" value="6" />
         </counts>
@@ -138,12 +147,12 @@
         <counts>
           <entry key="Pipfile" value="12" />
           <entry key="Procfile" value="160" />
-          <entry key="Python Console" value="182" />
-          <entry key="cell" value="5" />
+          <entry key="Python Console" value="381" />
+          <entry key="cell" value="15" />
           <entry key="css" value="343" />
           <entry key="dummy" value="80" />
           <entry key="html" value="5574" />
-          <entry key="py" value="10333" />
+          <entry key="py" value="10712" />
           <entry key="txt" value="30" />
         </counts>
       </usages-collector>
@@ -152,8 +161,8 @@
           <entry key="CSS" value="343" />
           <entry key="HTML" value="5574" />
           <entry key="PLAIN_TEXT" value="270" />
-          <entry key="Python" value="10515" />
-          <entry key="Scratch" value="5" />
+          <entry key="Python" value="11093" />
+          <entry key="Scratch" value="15" />
           <entry key="TOML file" value="12" />
         </counts>
       </usages-collector>
@@ -161,11 +170,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/admin_mod/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="123" column="63" selection-start-line="123" selection-start-column="63" selection-end-line="123" selection-end-column="63" />
+            <state relative-caret-position="667">
+              <caret line="116" column="35" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -174,40 +183,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/__init__.py">
+        <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/utils/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="90" column="37" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
               <folding>
-                <element signature="e#0#59#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#4867#5000#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="47" selection-start-column="47" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/animegalaxy.py">
-          <provider selected="true" editor-type-id="text-editor">
+        <entry file="das://b370bc24-c110-4ea5-8023-46f9b38b5cde/database/AnimeGalaxy/schema/public/table/user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
-              <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -257,12 +258,12 @@
         <option value="$PROJECT_DIR$/migrate.py" />
         <option value="$PROJECT_DIR$/animegalaxy.py" />
         <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/app/utils/__init__.py" />
-        <option value="$PROJECT_DIR$/app/admin_mod/views.py" />
         <option value="$PROJECT_DIR$/app/templates/_layout.html" />
         <option value="$PROJECT_DIR$/app/__init__.py" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/app/utils/__init__.py" />
+        <option value="$PROJECT_DIR$/app/admin_mod/views.py" />
       </list>
     </option>
   </component>
@@ -305,6 +306,12 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AnimeGalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimeGalaxy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -343,7 +350,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.AnimeServer">
+  <component name="RunManager" selected="Python.run">
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" singleton="true" temporary="true">
       <module name="AnimeGalaxy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -424,28 +431,28 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12526652" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12526652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" x="-1679" y="171" width="1647" height="304" id="Run" order="2" weight="0.23644252" />
+      <window_info active="true" anchor="bottom" x="-1679" y="171" width="1647" height="304" id="Run" order="2" visible="true" weight="0.23644252" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30477223" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Mypy" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.329718" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.329718" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.329718" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" auto_hide="true" id="SciView" order="3" show_stripe_button="false" type="SLIDING" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="4" weight="0.22014925" />
     </layout>
   </component>
@@ -456,59 +463,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.virtualenvs/AnimeGalaxy-kLWqawIO/Lib/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="2261" column="8" selection-start-line="2261" selection-start-column="8" selection-end-line="2261" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/b370bc24-c110-4ea5-8023-46f9b38b5cde.SCHEMA:AnimeGalaxy.public">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>b370bc24-c110-4ea5-8023-46f9b38b5cde.SCHEMA:AnimeGalaxy.public</OriginalElement>
-          <nodes>
-            <node x="" y="">b370bc24-c110-4ea5-8023-46f9b38b5cde.TABLE:AnimeGalaxy.public.anime</node>
-            <node x="" y="">b370bc24-c110-4ea5-8023-46f9b38b5cde.TABLE:AnimeGalaxy.public.user</node>
-            <node x="" y="">b370bc24-c110-4ea5-8023-46f9b38b5cde.TABLE:AnimeGalaxy.public.episode</node>
-            <node x="" y="">b370bc24-c110-4ea5-8023-46f9b38b5cde.TABLE:AnimeGalaxy.public.anime_genres</node>
-            <node x="" y="">b370bc24-c110-4ea5-8023-46f9b38b5cde.TABLE:AnimeGalaxy.public.genre</node>
-            <node x="" y="">b370bc24-c110-4ea5-8023-46f9b38b5cde.TABLE:AnimeGalaxy.public.alembic_version</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="424.0" y="236.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://b370bc24-c110-4ea5-8023-46f9b38b5cde/database/AnimeGalaxy/schema/public/table/quality">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://b370bc24-c110-4ea5-8023-46f9b38b5cde/database/AnimeGalaxy/schema/public/table/video">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://b370bc24-c110-4ea5-8023-46f9b38b5cde/database/AnimeGalaxy/schema/public/table/anime">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://b370bc24-c110-4ea5-8023-46f9b38b5cde/database/AnimeGalaxy/schema/public/table/anime_genres">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -603,13 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/AnimeGalaxy-kLWqawIO/Lib/site-packages/flask_admin/form/upload.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3525">
-          <caret line="443" lean-forward="true" selection-start-line="443" selection-end-line="443" />
         </state>
       </provider>
     </entry>
@@ -809,13 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://b370bc24-c110-4ea5-8023-46f9b38b5cde/database/AnimeGalaxy/schema/public/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/AnimeGalaxy-kLWqawIO/Lib/site-packages/flask_admin_s3_upload.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -835,19 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/utils/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#45#217#1" expanded="true" />
-            <element signature="e#7419#7482#1" expanded="true" />
-            <element signature="e#7569#7627#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/anime/episode_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -855,24 +782,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/_layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/animegalaxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -905,26 +818,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin_mod/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="123" column="63" selection-start-line="123" selection-start-column="63" selection-end-line="123" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8308871d-1124-44ff-b72d-5f189ca5c0eb/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+    <entry file="das://8308871d-1124-44ff-b72d-5f189ca5c0eb/database/d5e7c2n50ucg1l/schema/public/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
+        <state>
           <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
@@ -936,6 +842,87 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="47" selection-start-column="47" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/AnimeGalaxy-kLWqawIO/Lib/site-packages/boto/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="128" column="4" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/AnimeGalaxy-kLWqawIO/Lib/site-packages/flask_admin/form/upload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1989">
+          <caret line="125" column="6" selection-start-line="125" selection-start-column="6" selection-end-line="125" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/AnimeGalaxy-kLWqawIO/Lib/site-packages/boto/connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="1070" selection-start-line="1070" selection-end-line="1070" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/AnimeGalaxy-kLWqawIO/Lib/site-packages/boto/s3/connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="513" column="8" lean-forward="true" selection-start-line="513" selection-start-column="8" selection-end-line="513" selection-end-column="8" />
+          <folding>
+            <element signature="e#18695#20223#1" expanded="true" />
+            <element signature="e#20444#20830#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/animegalaxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/_layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-621">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/utils/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="90" column="37" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#4867#5000#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b370bc24-c110-4ea5-8023-46f9b38b5cde/database/AnimeGalaxy/schema/public/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin_mod/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="116" column="35" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

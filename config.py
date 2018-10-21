@@ -9,8 +9,8 @@ FLASK_HOST = '0.0.0.0'
 # BASE_DIR = abspath(dirname(__file__))
 
 # Define the application STATIC and MEDIA path
-STATIC = 'app\static'
-MEDIA_PATH = 'app\static\media'
+STATIC = '/static'
+MEDIA_PATH = '/static/media'
 
 # Enable HTML Minification
 MINIFY_PAGE = True
