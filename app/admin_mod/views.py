@@ -1,7 +1,7 @@
 import uuid
 
 from flask import url_for, redirect, request
-from flask_admin.contrib.fileadmin import FileAdmin
+from flask_admin.contrib.fileadmin.s3 import S3FileAdmin
 from flask_admin.contrib.sqla import ModelView
 from flask_admin import form, expose
 from flask_login import current_user
@@ -9,10 +9,11 @@ from werkzeug.utils import secure_filename
 from wtforms import PasswordField
 from wtforms.validators import DataRequired
 
+import config
 from app import admin, db
 from app.models import User, Anime, Genre, Episode, Quality, Video
 
-from config import MEDIA_PATH, STATIC
+from config import STATIC
 
 
 def media_prefix_uuid(obj, file_data):
@@ -20,7 +21,7 @@ def media_prefix_uuid(obj, file_data):
 
 
 # File View Class to add permission checking, prevent users from seeing page
-class FileView(FileAdmin):
+class FileView(S3FileAdmin):
 	def is_accessible(self):
 		return current_user.is_authenticated and current_user.is_admin
 
@@ -122,4 +123,4 @@ admin.add_view(EpisodeView(Episode, db.session, category="Anime"))
 admin.add_view(VideoView(Video, db.session, category="Anime"))
 admin.add_view(GenreView(Genre, db.session, category="Config"))
 admin.add_view(QualityView(Quality, db.session, category="Config"))
-admin.add_view(FileView(STATIC, '/static/', name='Static Files'))
+admin.add_view(FileView(config.FLASKS3_BUCKET_NAME, config.FLASKS3_REGION, config.AWS_ACCESS_KEY_ID, config.AWS_SECRET_ACCESS_KEY))

@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect, url_for
 from flask_login import LoginManager, current_user
 from flask_admin import Admin, AdminIndexView, expose
+from flask_s3 import FlaskS3
 from flask_wtf.csrf import CSRFProtect
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -11,11 +12,13 @@ csrf = CSRFProtect()
 db = SQLAlchemy()
 migrate = Migrate()
 admin = Admin()
+s3 = FlaskS3()
 
 
 def create_app():
 	app = Flask(__name__)
 	app.config.from_object('config')
+	s3.init_app(app)
 	login.init_app(app)
 	csrf.init_app(app)
 	db.init_app(app)

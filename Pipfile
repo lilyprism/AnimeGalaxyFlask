@@ -17,6 +17,8 @@ flask-admin = "*"
 pillow = "*"
 flask-htmlmin = "*"
 gunicorn = "*"
+boto = "*"
+"flask-s3" = "*"
 
 [dev-packages]
 

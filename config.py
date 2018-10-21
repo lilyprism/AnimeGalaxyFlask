@@ -1,16 +1,16 @@
 # Statement for enabling the development environment
 import os
 
-DEBUG = True
+DEBUG = False
 
 # Define the application directory
 from os.path import abspath, dirname, join
 
-BASE_DIR = abspath(dirname(__file__))
+# BASE_DIR = abspath(dirname(__file__))
 
 # Define the application STATIC and MEDIA path
-STATIC = join(dirname(__file__), 'app\static')
-MEDIA_PATH = join(dirname(__file__), 'app\static\media')
+STATIC = 'app\static'
+MEDIA_PATH = 'app\static\media'
 
 # Enable HTML Minification
 MINIFY_PAGE = True
@@ -36,3 +36,17 @@ CSRF_SESSION_KEY = "SUPERDUCKINGSECRETKEY"
 
 # Secret key for signing cookies
 SECRET_KEY = "SUPERDUCKINGSECRETKEY"
+
+# AWS CONFIG
+FLASKS3_BUCKET_NAME = 'anime-galaxy'
+FLASKS3_REGION = 'eu-west-2'
+AWS_ACCESS_KEY_ID = 'AKIAJSZT2QEAJX4WX6UQ'
+AWS_SECRET_ACCESS_KEY = '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'
+FLASKS3_ACTIVE = True
+FLASKS3_DEBUG = DEBUG
+FLASKS3_FORCE_MIMETYPE = True
+FLASKS3_FILEPATH_HEADERS = {
+    r'.css$': {
+        'Content-Type': 'text/css',
+    }
+}
