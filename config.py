@@ -6,9 +6,6 @@ DEBUG = True
 FLASK_PORT = 80
 FLASK_HOST = '0.0.0.0'
 
-# Define the application directory
-from os.path import abspath, dirname, join
-
 # BASE_DIR = abspath(dirname(__file__))
 
 # Define the application STATIC and MEDIA path
