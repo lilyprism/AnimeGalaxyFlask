@@ -19,6 +19,7 @@ flask-htmlmin = "*"
 gunicorn = "*"
 boto = "*"
 "flask-s3" = "*"
+"url-for-s3" = "*"
 
 [dev-packages]
 

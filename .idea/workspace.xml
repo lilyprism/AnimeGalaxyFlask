@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6a42f5a-5605-4a92-842d-e7d04596e4ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin_mod/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin_mod/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/media/2878439b-2048-4b2a-a9d2-b0b3c25a895d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/media/57f58ebd-4212-4094-837d-4ac0b72e65b5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/media/7e23bd68-ae6c-4df9-a58a-a519d8397003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/media/82e4c0ef-4c8a-4197-8e1c-5dfe177db2a4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/media/84d1fd1f-b48f-4899-b360-87e5e5c0bac5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/media/b84367d6-969a-476f-b9b7-7cdc378bc0bc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/media/cd6cb361-8bda-472d-ae6b-6850fb36ab2e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/media/d62a1985-c6e6-438f-b089-330d4037196f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-    </list>
+    <list default="true" id="b6a42f5a-5605-4a92-842d-e7d04596e4ad" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +79,7 @@
     <session id="-1724296643">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.17" value="1" />
@@ -173,8 +160,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/admin_mod/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="116" column="35" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
+            <state relative-caret-position="322">
+              <caret line="101" column="71" lean-forward="true" selection-start-line="101" selection-start-column="71" selection-end-line="101" selection-end-column="71" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -436,7 +423,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" x="-1679" y="171" width="1647" height="304" id="Run" order="2" visible="true" weight="0.23644252" />
+      <window_info anchor="bottom" x="-1679" y="171" width="1647" height="304" id="Run" order="2" weight="0.23644252" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30477223" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -918,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin_mod/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="116" column="35" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
+        <state relative-caret-position="322">
+          <caret line="101" column="71" lean-forward="true" selection-start-line="101" selection-start-column="71" selection-end-line="101" selection-end-column="71" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
